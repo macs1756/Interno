@@ -1,0 +1,56 @@
+
+$PC:1200px;
+$mini:992px;
+$Tb:767px;
+$Mb:576px;
+$media:820px;
+
+
+
+
+//зелений
+$green:#147E45;
+$green_hov: #1FB765;
+
+
+//шрифти
+$font:16px;
+$font_t:17px;
+$font_th:18px;
+$font_f:19px;
+$br:999px;
+$sb:  space-between;
+
+
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+body{
+	font-family: "jost";
+}
+
+.content{
+	margin: 0 auto;
+	max-width: 1220px;
+	padding: 0 10px;
+}
+
+.wrapper{
+	position: relative;
+}
+img{
+	max-width: 100%;
+}
+a{
+	color: inherit;
+}
+
+main{
+	margin-top: 101px;
+	@media (max-width: $Tb){
+		margin-top: 70px;
+	}
+	@media (max-width: $Mb){
+		margin-top: 60px;
+	}
+	
+}
