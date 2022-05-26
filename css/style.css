@@ -144,8 +144,13 @@ header {
 }
 
 .header__logo {
-  min-width: 145px;
   margin-right: 10px;
+}
+
+@media (max-width: 576px) {
+  .header__logo {
+    width: 145px;
+  }
 }
 
 .header__burger {

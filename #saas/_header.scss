@@ -26,8 +26,11 @@ header{
 	
 }
 .header__logo{
-		min-width: 145px;
-		margin-right: 10px;
+		margin-right: 10px;		
+		@media (max-width: $Mb){
+			width: 145px;
+		}
+		 
 }
 
 
