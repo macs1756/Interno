@@ -11,6 +11,10 @@
 		border-radius: 0;
 		padding: 60px 0;
 	}
+	@media (max-width: $Tb){
+		margin-bottom: 50px;
+	}
+
 	@media (max-width: $Mb){
 		background:  url(../img/main__block.jpg) 60% 70% no-repeat;
 		position: relative;
