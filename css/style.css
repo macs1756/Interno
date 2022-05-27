@@ -754,7 +754,7 @@ h3 {
 
 @media (max-width: 600px) {
   .our_works_tel {
-    margin: 25px 0 35px;
+    margin: 15px 0 25px;
   }
 }
 
@@ -767,10 +767,24 @@ h3 {
   background: #F4F0EC url(../img/tel_ico.svg) center center no-repeat;
 }
 
+@media (max-width: 576px) {
+  .our_works_tel_ico {
+    width: 60px;
+    height: 60px;
+    background-size: 40%;
+  }
+}
+
 .our_works_tel_text {
   font-size: 24px;
   line-height: 150%;
   letter-spacing: 0.22px;
+}
+
+@media (max-width: 767px) {
+  .our_works_tel_text {
+    font-size: 17px;
+  }
 }
 
 .our_works_btn {
@@ -781,6 +795,12 @@ h3 {
   color: #fff;
   line-height: 65px;
   padding: 0 65px 0 31px;
+}
+
+@media (max-width: 576px) {
+  .our_works_btn {
+    border-radius: 0 30px 30px 0;
+  }
 }
 
 .our_works_title {
