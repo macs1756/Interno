@@ -639,4 +639,23 @@ h2 {
 .disign_elements_btn:hover {
   color: #CDA274;
 }
+
+.our_works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 140px;
+}
+
+.our_works__text {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
+
+.our_works__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+}
 /*# sourceMappingURL=style.css.map */
