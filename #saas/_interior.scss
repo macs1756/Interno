@@ -1,0 +1,121 @@
+
+.interior{
+	margin-bottom: 100px;
+	padding: 194px 0 250px 0;
+	background:  url(../img/main__block.jpg) center center no-repeat;
+	border-radius: 0 0 0 290px;
+	max-width: 1440px;
+	margin: auto;
+	@media (max-width: 992px){
+		border-radius: 0;
+		padding: 60px 0;
+	}
+	
+}
+
+.interior__text{
+		max-width: 595px;
+}
+h1{
+	font-family: 'DM Serif Display';
+	font-size: 75px;
+	line-height: 120%;
+	letter-spacing: 0.22px;
+	color: #292F36;
+	margin-bottom: 19px;
+	@media (max-width: $Tb){
+		font-size: 50px;
+	}
+	@media (max-width: $Mb){
+		font-size: 35px;
+		margin-bottom: 15px;
+	}
+	
+	
+}
+.interior__text_p{
+	font-size: 22px;
+line-height: 150%;
+letter-spacing: 0.22px;
+@media (max-width: $Tb){
+	max-width: 300px;
+}
+
+
+}
+
+
+.interior__text_btn{
+	margin-top: 35px;
+	display: inline-block;
+	padding-left: 35px;
+	line-height: 70px;
+	width: 200px;
+	height: 70px;
+	background: rgba(41, 47, 54, 0.9);
+	border: 2px solid #292F36;
+	border-radius: 19px;
+	position: relative;
+	color: #fff;
+	&:hover{
+		background-color: rgba(41, 47, 54, 1);
+	}
+	&:active{
+		background-color: rgba(41, 47, 54, 1);
+	}
+
+	@media (max-width: $Mb){
+			margin-top: 15px;
+			width: 160px;
+			height: 60px;
+			line-height: 60px;
+			text-align: center;
+			padding: 0;
+			border-radius: 0 30px 30px 0;
+	}
+	
+	&:after{
+		content: "";
+		display: block;
+		width: 24px;
+		height: 2px;
+		background-color: #CDA274;
+		position: absolute;
+		right: 20px;
+		top: 35px;
+		@media (max-width: $Mb){
+			display: none;
+		}
+		
+	}
+	&:before{
+		content: "";
+		transform: rotate(45deg);
+		display: block;
+		width: 18px;
+		height: 2px;
+		background-color: #CDA274;
+		position: absolute;
+		right: 18px;
+		top: 28px;
+		@media (max-width: $Mb){
+			display: none;
+		}
+	}
+	span{
+		&:before{
+			content: "";
+			transform: rotate(-45deg);
+			display: block;
+			width: 18px;
+			height: 2px;
+			background-color: #CDA274;
+			position: absolute;
+			right: 18px;
+			bottom: 23px;
+			@media (max-width: $Mb){
+				display: none;
+			}
+		}
+	}
+}
