@@ -4,6 +4,10 @@
 
 .disign_elements{
 margin-bottom: 75px;
+@media (max-width: $Mb){
+	margin-bottom: 20px;
+}
+
 }
 
 

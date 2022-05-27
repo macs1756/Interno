@@ -1,27 +1,58 @@
 .our_works {
 	display: flex;
 	margin-bottom: 140px;
+	@media (max-width: $Tb){
+		flex-direction: column-reverse;
+	}
+	
 }
 
 
 .our_works__text {
 	flex: 0 1 50%;
 	padding-top: 40px;
+	margin-right: 10px;
+	@media (max-width: 992px){
+		padding-top: 0;
+	}
+	
 }
 .our_works__img {
 	flex: 0 1 50%;
+
+	min-width: 350px;
+	@media (max-width: $Tb){
+		margin-bottom: 20px;
+		align-self: center;
+	}
 	img{
 		border-radius: 0px 326px 0px 123px;
+		@media (max-width: $Mb){
+			border-radius: 5px;
+		}
 	}
+	@media (max-width: $Mb){
+		min-width: 300px;
+	}
+	
 }
 
 h3{
-	min-width: 450px;
+
 	font-family: 'DM Serif Display';
 	font-size: 50px;
 	line-height: 130%;
 	letter-spacing: 0.22px;
 	margin-bottom: 42px;
+
+	@media (max-width: 992px){
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+	@media (max-width: $Tb){
+		display: none;
+	}
+	
 }
 
 .our_works_p{
@@ -29,12 +60,19 @@ h3{
 	font-size: 22px;
 	line-height: 150%;
 	letter-spacing: 0.22px;
+	@media (max-width: 992px){
+		font-size: 20px;
+	}
 }
 
 .our_works_tel {
 	display: flex;
 	align-items: center;
 	margin: 40px 0 50px 0;
+	@media (max-width: 600px){
+		margin: 25px 0 35px;
+	}
+	
 }
 
 .our_works_tel_ico {
@@ -59,4 +97,19 @@ border-radius: 18px;
 color: #fff;
 line-height: 65px;
 padding: 0 65px 0 31px;
+}
+
+.our_works_title{
+		display: none;
+		@media (max-width: $Tb){
+			display: block;
+			font-size: 25px;
+			margin-bottom: 20px;
+			font-family: 'DM Serif Display';
+		}
+		
+		@media (max-width: $Mb){
+			font-size: 22px;
+		}
+		
 }
