@@ -352,6 +352,25 @@ header {
   }
 }
 
+@media (max-width: 576px) {
+  .interior {
+    background: url(../img/main__block.jpg) 60% 70% no-repeat;
+    position: relative;
+  }
+  .interior:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #292F36;
+    opacity: 0.25;
+    z-index: 1;
+  }
+}
+
 .interior__text {
   max-width: 595px;
 }
