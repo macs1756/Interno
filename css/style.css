@@ -423,6 +423,10 @@ h1 {
   position: relative;
   z-index: 55;
   color: #fff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .interior__text_btn:hover {
