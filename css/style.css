@@ -420,6 +420,7 @@ h1 {
   border: 2px solid #292F36;
   border-radius: 19px;
   position: relative;
+  z-index: 55;
   color: #fff;
 }
 
