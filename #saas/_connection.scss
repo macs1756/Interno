@@ -1,0 +1,83 @@
+
+
+
+
+.connection{
+	margin: 100px 0 130px 0;
+	background-color: #292F36;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 70px;
+	padding: 97px 0;
+	color: #fff;
+	letter-spacing: 0.22px;
+	line-height: 150%;
+	@media (max-width: 992px){
+		padding: 70px 0;
+		margin: 80px 0 100px 0;
+	}
+	@media (max-width: $Tb){
+		padding: 40px 0;
+		margin: 50px 0 70px 0;
+	}
+	@media (max-width: 600px){
+		border-radius: 5px;
+		margin: 0 0 40px 0 ;
+	}
+}
+
+.connection__title {
+	font-size: 50px;
+	font-family: 'DM Serif Display';
+	margin-bottom: 9px;
+	@media (max-width: $Tb){
+		font-size: 30px;
+	}
+	@media (max-width: $Mb){
+		font-size: 22px;
+	}
+	
+	
+}
+.connection__p {
+	font-size: 22px;
+	margin-bottom: 31px;
+	@media (max-width: $Tb){
+		font-size: 18px;
+		margin-bottom: 10px;
+	}
+	@media (max-width: $Mb){
+		font-size: 14px;
+		line-height: 110%;
+		margin-bottom: 20px;
+	}
+	
+	
+}
+.connection__btn {
+	display: inline-block;
+	line-height: 70px;
+	font-size: 18px;
+	background: #CDA274 ;
+border: 2px solid #CDA274;
+box-shadow: 1px 0px 18px rgba(0, 0, 0, 0.2);
+border-radius: 18px;
+padding: 0 34px;
+transition: all 500ms linear;
+&:hover{
+	transition: all 500ms linear;
+	background: #aa7c4c ;
+}
+&:active{
+	transition: all 500ms linear;
+	background: #926b42 ;
+}
+@media (max-width: $Tb){
+	padding: 0 15px;
+	line-height: 50px;
+}
+@media (max-width: 600px){
+	border-radius: 5px;
+}
+}
