@@ -3,10 +3,9 @@ header{
 	top: 0;
 	left: 0;
 	color: #292F36;
-	border-bottom: 1px solid #000;
 	width: 100%;
 	background-color: #fff;
-	z-index: 90;
+	z-index: 9999;
 	user-select: none;
 }
 
@@ -15,7 +14,11 @@ header{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 25px 0;
+	padding: 25px 0px;
+	position: relative;
+	z-index: 999;
+	background-color: #fff;
+
 	@media (max-width: $Tb){
 		min-height: 70px;
 		padding: 10px 0;
@@ -23,11 +26,14 @@ header{
 	@media (max-width: $Mb){
 		min-height: 60px;
 		padding: 5px 0;
+		margin: 0 -10px;
+		border-bottom: 1px solid #000;
 	}
 	
 }
 .header__logo{
-		margin-right: 10px;		
+		margin-right: 10px;	
+		margin-left: 10px;	
 		@media (max-width: $Mb){
 			width: 145px;
 		}
@@ -173,9 +179,9 @@ header{
 	position: absolute;
 	z-index: 89;
 	width: 100vw;
-	height: 100vh;
+	min-height: 700px;
 	background-color: #CDA274;
-	padding: 50px 15px;
+	padding: 80px 15px 15px 45px;
 
 	}
 }
