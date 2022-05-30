@@ -7,7 +7,13 @@ body {
 .content {
   margin: 0 auto;
   max-width: 1220px;
-  padding: 0 10px;
+  padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 0 10px;
+  }
 }
 
 .wrapper {
@@ -323,7 +329,7 @@ header {
     position: absolute;
     z-index: 89;
     width: 100vw;
-    min-height: 700px;
+    min-height: 750px;
     background-color: #CDA274;
     padding: 80px 15px 15px 45px;
   }
@@ -1294,13 +1300,13 @@ h3 {
 
 @media (max-width: 992px) {
   .attainment {
-    padding: 60px 0 100px 0;
+    padding: 60px 0 60px 0;
   }
 }
 
 @media (max-width: 576px) {
   .attainment {
-    padding: 40px 0 60px 0;
+    padding: 40px 0 30px 0;
   }
 }
 
@@ -1377,5 +1383,71 @@ h3 {
     font-size: 14px;
     line-height: 120%;
   }
+}
+
+.blog {
+  text-align: center;
+}
+
+.blog__p {
+  margin-bottom: 70px;
+}
+
+.blog__net {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-column-gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.blog__net_item {
+  border: 1px solid #E7E7E7;
+  border-radius: 62px;
+  padding: 20px 20px 40px 20px;
+  max-width: 387px;
+  text-align: left;
+  margin: 0 auto 40px auto;
+}
+
+.blog__item_img img {
+  border-radius: 45px 45px 0 0;
+  margin-bottom: 15px;
+}
+
+.blog__item_title {
+  font-family: 'DM Serif Display';
+  font-size: 25px;
+  line-height: 140%;
+  letter-spacing: 0.5px;
+  margin-bottom: 20px;
+}
+
+.blog__item_text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog__item_textData {
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.blog__item_textBtn {
+  display: block;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #F4F0EC url(../img/arrow_card.svg) center center no-repeat;
 }
 /*# sourceMappingURL=style.css.map */
