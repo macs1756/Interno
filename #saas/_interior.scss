@@ -75,18 +75,21 @@ letter-spacing: 0.22px;
 	line-height: 70px;
 	width: 200px;
 	height: 70px;
-	background: rgba(41, 47, 54, 0.9);
+	background: rgb(15, 15, 15);
 	border: 2px solid #292F36;
 	border-radius: 19px;
 	position: relative;
-	z-index: 55;
+	z-index: 99999;
 	color: #fff;
 	user-select: none;
+	transition: All 500ms linear;
 	&:hover{
-		background-color: rgba(41, 47, 54, 1);
+		background-color: rgb(54, 48, 48);
+		transition: All 300ms linear;
 	}
 	&:active{
-		background-color: rgba(41, 47, 54, 1);
+		background-color: rgb(54, 48, 48);
+		transition: All 300ms linear;
 	}
 
 	@media (max-width: $Mb){

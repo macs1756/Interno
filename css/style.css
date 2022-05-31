@@ -434,24 +434,30 @@ h1 {
   line-height: 70px;
   width: 200px;
   height: 70px;
-  background: rgba(41, 47, 54, 0.9);
+  background: #0f0f0f;
   border: 2px solid #292F36;
   border-radius: 19px;
   position: relative;
-  z-index: 55;
+  z-index: 99999;
   color: #fff;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  -webkit-transition: All 500ms linear;
+  transition: All 500ms linear;
 }
 
 .interior__text_btn:hover {
-  background-color: #292f36;
+  background-color: #363030;
+  -webkit-transition: All 300ms linear;
+  transition: All 300ms linear;
 }
 
 .interior__text_btn:active {
-  background-color: #292f36;
+  background-color: #363030;
+  -webkit-transition: All 300ms linear;
+  transition: All 300ms linear;
 }
 
 @media (max-width: 576px) {
