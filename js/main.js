@@ -8,12 +8,7 @@ burgerBtn.addEventListener("click", function(){
 });
 
 
-const bt = document.querySelectorAll(".hgt");
-bt.forEach(function(item){
-	item.addEventListener("click", function(){
-		item.classList.toggle("hgt");
-	});
-});
+
 
 
 
