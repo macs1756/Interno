@@ -1694,7 +1694,18 @@ h3 {
 
 @media (max-width: 600px) {
   .hgt {
+    height: 30px;
+    -webkit-transition: all 2s linear;
+    transition: all 2s linear;
+  }
+  .hgt li {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__list_explore {
+    margin: 10px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

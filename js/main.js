@@ -8,9 +8,20 @@ burgerBtn.addEventListener("click", function(){
 });
 
 
-const bt = document.querySelector("#pages");
-const ct = document.querySelector("#pagesList");
+const bt = document.querySelectorAll(".hgt");
 
-bt.addEventListener("click", function(){
-	ct.classList.toggle("hgt");
+bt.forEach(function(item){
+	item.addEventListener("click", function(){
+		item.classList.toggle("hgt");
+	});
 });
+
+
+
+
+
+
+
+
+
+
