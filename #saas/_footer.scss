@@ -3,7 +3,6 @@
 
 .footer{
 	display: flex;
-	padding-bottom: 30px;
 	@media (max-width: $Tb){
 		flex-direction: column;
 	}
@@ -55,12 +54,22 @@ font-size: 25px;
 margin-bottom: 21px;
 line-height: 150%;
 letter-spacing: 0.22px;
+@media (max-width: $Mb){
+	margin: 25px 0 5px 0;
+}
+
 }
 .pages__list {
 	li{
-		margin-bottom: 30px;
 		line-height: 150%;
 		letter-spacing: 0.22px;
+		@media (max-width: $Mb){
+			line-height: 100%;
+			padding-left: 15px;
+		}
+	}
+	li:not(:last-child){
+		margin-bottom: 30px;
 	}
 }
 
@@ -90,9 +99,3 @@ letter-spacing: 0.22px;
 	
 }
 
-.footer__list_explore{
-	@media (max-width: 600px){
-		margin: 10px 0;
-	}
-	
-}
