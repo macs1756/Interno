@@ -8,3 +8,9 @@ burgerBtn.addEventListener("click", function(){
 });
 
 
+const bt = document.querySelector("#pages");
+const ct = document.querySelector("#pagesList");
+
+bt.addEventListener("click", function(){
+	ct.classList.toggle("hgt");
+});

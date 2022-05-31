@@ -1568,4 +1568,133 @@ h3 {
     border-radius: 5px;
   }
 }
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__part {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+  .footer__part {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.footer__left_p {
+  max-width: 326px;
+  letter-spacing: 0.22px;
+  font-size: 22px;
+  line-height: 150%;
+  margin-bottom: 30px;
+}
+
+.footer__social_networks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__social_networks img {
+  margin-right: 40px;
+}
+
+.part__pages {
+  padding-right: 100px;
+}
+
+@media (max-width: 992px) {
+  .part__pages {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .part__pages {
+    padding-right: 210px;
+  }
+}
+
+@media (max-width: 600px) {
+  .part__pages {
+    padding-left: 0;
+  }
+}
+
+.pages__title {
+  font-family: 'DM Serif Display';
+  font-size: 25px;
+  margin-bottom: 21px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.pages__list li {
+  margin-bottom: 30px;
+  line-height: 150%;
+  letter-spacing: 0.22px;
+}
+
+.contact__list {
+  max-width: 320px;
+  padding-right: 15px;
+}
+
+@media (max-width: 992px) {
+  .contact__list {
+    padding-right: 0;
+  }
+}
+
+.footer__list_contact {
+  margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .footer__list_contact {
+    margin-left: 0;
+  }
+}
+
+.part__logo {
+  padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+  .part__logo {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hgt {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
